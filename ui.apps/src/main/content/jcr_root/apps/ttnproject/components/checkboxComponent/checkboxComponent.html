@@ -1,0 +1,8 @@
+<sly data-sly-use.model="com.ttn.project.core.models.CheckboxModel">
+    <sly data-sly-test="${model.isChecked}">
+        <div>The Config is Enabled.</div>
+    </sly>
+    <sly data-sly-test="${!model.isChecked}">
+        <div>The Config is Disabled.</div>
+    </sly>
+</sly>
